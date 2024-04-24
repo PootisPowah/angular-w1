@@ -1,0 +1,88 @@
+<html>
+<body>
+    <div class="container">
+        <img src="https://cdna.artstation.com/p/assets/images/images/061/808/820/large/oriana-shepard-img-0013.jpg?1681693393"
+            class="my-pic">
+        <div>
+            <p class="welcome"> Welcome to <i>Kristiyan Kraev's</i> page </p>
+        </div>
+
+    </div>
+
+
+    <div class="info-div">
+        <div class="info-text">
+
+            <div>
+                <h2 (click)="toggleAboutMe()" class="about-me">👨‍🎓 About Me</h2>
+                <div *ngIf="showAboutMe" class="about-me-text">
+                    <p>Hello dear reader! My name is {{title}}. I am {{age}} years old. My birthplace is Gabrovo,
+                        Bulgaria, but I've been
+                        living in Plovdiv for the past 2 years to study Software Engineering in Plovdiv University
+                        Paisii Hilendarski, Faculty of Mathematics and Informatics.<br><br> This summer I'm hoping to
+                        find a
+                        pleasant intership so that I can finally get into the IT workplace. I skipped last year's
+                        internships because I wanted to try something completely different from programming. I became a
+                        Sport and Kids entertainer at 5 star hotel in Obzor. This experience was to show me whether
+                        I wished to continue pursuing Software Engineering or chose something else while I still had
+                        time
+                        and it let me to the decision that I really want to be a Software Engineer...Mostly backend :).
+                    </p>
+
+                </div>
+            </div>
+
+            <div>
+                <h2 (click)="toggleHobbies()" class="about-me">🎮 Hobbies and interests</h2>
+                <div *ngIf="showHobbies" class="about-me-text">
+                    <p>My favourite hobbies for sure are:</p>
+                    <p>1. Gaming (mostly past-paced FPS' for example: <span style="color: red;">Doom/Doom
+                            Eternal</span>) and Helldivers 2 is really fun right now</p>
+                    <p>2. Working out at a gym or street fitness with pull-up bars/Calisthenics</p>
+                    <p>3. Exploring the nuances of the everyday changes in the SE world</p>
+                    <p>4. I love to spend my freetime with my girlfriend doing fun and different things everyday because
+                        we live together 💖</p>
+                </div>
+            </div>
+
+            <div>
+                <h2 (click)="toggleFavCreator()" class="about-me">🤷‍♂️ Favourite content creator</h2>
+                <div *ngIf="showFavCreator" class="about-me-text">
+                    <p>Uhh, I don't really have a favourite content creator right now, I watch a lot of different styles
+                        of creators so I really can't answer that question at the moment.</p>
+
+                </div>
+            </div>
+
+            <div>
+                <h2 (click)="toggleMyChannel()" class="about-me">📸 My channel</h2>
+                <div *ngIf="showChannel" class="about-me-text">
+                    <p>Here is a link to my <a href="https://www.youtube.com/channel/UCcIzptzewhWHbpBoXgttmTA">Youtube
+                            channel
+                        </a> </p>
+                </div>
+            </div>
+
+            <div>
+                <h2 (click)="togglePay()" class="about-me">💸 Pay I want</h2>
+                <div *ngIf="showPay" class="about-me-text">
+                    <p>I'm willing to work for free as for a max of 2 months consisting of gaining experience as long as
+                        I get
+                        a full-time job after that 😁</p>
+
+                </div>
+            </div>
+        </div>
+
+        <img src="../assets/DSC_6048.jpg" alt="Koko" class="me">
+
+    </div>
+
+    <footer>
+        <p>- <b>2024</b></p>
+
+        <a href="https://www.instagram.com/koko_kraev03/" target="_blank"><img src="..\assets\insta.png" alt="Instagram"
+                class="social-media"></a>
+    </footer>
+</body>
+</html>
